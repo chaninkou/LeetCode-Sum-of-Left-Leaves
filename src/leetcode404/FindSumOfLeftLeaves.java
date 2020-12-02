@@ -3,6 +3,7 @@ package leetcode404;
 import java.util.Stack;
 
 public class FindSumOfLeftLeaves {
+	// Recursive way
     public int sumOfLeftLeaves(TreeNode root) {
         if(root == null){
             return 0;
@@ -22,6 +23,7 @@ public class FindSumOfLeftLeaves {
         return result;
     }
     
+    // Using stack to see leftover node
 	public int sumOfLeftLeaves2(TreeNode root) {
         if(root == null){
             return 0;
